@@ -1,8 +1,8 @@
 import Vue from 'vue'
-window.Vue = Vue;
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Example from '@/components/Example'
+import Registration from '@/components/Registration'
 
 Vue.use(Router)
 
@@ -18,5 +18,12 @@ export default new Router({
       name: 'Example',
       component: Example
     },
+    {
+      path: '/registration',
+      name: 'Registration',
+      component: Registration
+    }
   ]
 })
+
+
